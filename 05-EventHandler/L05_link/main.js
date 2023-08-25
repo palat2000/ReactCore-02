@@ -1,4 +1,20 @@
+const App = () => {
+  const handleClick = (e) => {
+    let isTrue = confirm("Leave for google?");
+    if (isTrue) {
+      window.location.href = "https://google.com";
+    }
+  };
+  return (
+    <div>
+      <a href="#" onClick={handleClick}>
+        Google
+      </a>
+    </div>
+  );
+};
+
 // ReactDOM
-const domRoot = document.getElementById('root');
+const domRoot = document.getElementById("root");
 const root = ReactDOM.createRoot(domRoot);
-root.render(<h1>Hello React</h1>);
+root.render(<App />);
