@@ -8,11 +8,6 @@ const Mosquito = () => {
     alert("Dead");
     setIsDead(true);
   };
-
-  const dead = () => {
-    alert("dead");
-  };
-
   React.useEffect(() => {
     const updatePosition = () => {
       const newX = Math.random() * (window.innerWidth - 50);

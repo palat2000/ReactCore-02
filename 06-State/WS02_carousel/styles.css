@@ -1,20 +1,53 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+  font-size: 62.5%; // root 16px * 0.625 == 10px
 }
 
 body {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 h1 {
-    font-size: 4rem;
-    text-align: center;
-    margin: 3rem 0;
-    /* color: red; */
+  font-size: 4rem;
+  text-align: center;
+  margin: 3rem 0;
+  /* color: red; */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: dodgerblue;
+}
+
+.container__car {
+  background-color: wheat;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.box > i {
+  cursor: pointer;
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
